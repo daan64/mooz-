@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mooz - Airco Installatie</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+/* NAVBAR */
+
+header{
+background:#0a2540;
+color:white;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#3fa9ff;
+}
+
+/* HERO */
+
+.hero{
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc");
+background-size:cover;
+color:white;
+padding:40px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#2ea3ff;
+padding:15px 30px;
+border:none;
+border-radius:6px;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#1c7ed6;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:35px;
+margin-bottom:50px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.service{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service:hover{
+transform:translateY(-10px);
+}
+
+.service h3{
+margin-bottom:15px;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+/* FORM */
+
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border-radius:5px;
+border:1px solid #ccc;
+font-size:15px;
+}
+
+textarea{
+height:120px;
+}
+
+/* FOOTER */
+
+footer{
+background:#0a2540;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">MOOZ</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#diensten">Diensten</a>
+<a href="#over">Over</a>
+<a href="#offerte">Offerte</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+<h1>Airco laten installeren?</h1>
+<p>Professionele airco installatie door Mooz</p>
+<button class="btn">Vraag offerte aan</button>
+</div>
+
+</section>
+
+<section id="diensten">
+
+<h2 class="section-title">Onze Diensten</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>Airco Installatie</h3>
+<p>Professionele installatie van energiezuinige airconditioningsystemen voor woningen en bedrijven.</p>
+</div>
+
+<div class="service">
+<h3>Airco Onderhoud</h3>
+<p>Regelmatig onderhoud voor optimale prestaties en een langere levensduur van uw airco.</p>
+</div>
+
+<div class="service">
+<h3>Airco Reparatie</h3>
+<p>Snelle diagnose en reparatie van defecte airconditioners.</p>
+</div>
+
+<div class="service">
+<h3>Advies</h3>
+<p>Wij helpen u de juiste airco te kiezen voor uw woning of bedrijf.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="over">
+
+<h2 class="section-title">Over Mooz</h2>
+
+<div class="about">
+
+<div>
+<p>
+Mooz is gespecialiseerd in het installeren van moderne en energiezuinige airconditioningsystemen.
+Wij leveren professionele installaties voor woningen, kantoren en winkels.
+</p>
+
+<br>
+
+<p>
+Onze focus ligt op kwaliteit, betrouwbaarheid en klanttevredenheid.
+</p>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a">
+
+</div>
+
+</section>
+
+<section id="offerte">
+
+<h2 class="section-title">Offerte aanvragen</h2>
+
+<form>
+
+<input type="text" placeholder="Naam" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="tel" placeholder="Telefoonnummer">
+
+<textarea placeholder="Vertel ons wat u nodig heeft"></textarea>
+
+<button class="btn">Verstuur aanvraag</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p style="text-align:center">
+Email: info@mooz.nl<br>
+Telefoon: 06-00000000
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Mooz - Airco Installatie</p>
+
+</footer>
+
+</body>
+</html>
